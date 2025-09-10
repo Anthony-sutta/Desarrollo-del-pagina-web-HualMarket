@@ -1,0 +1,158 @@
+*{
+    background-color: #c0392b;
+    margin: 0;
+}
+.logo{
+    width: 200px;
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.Buscador{
+    position: relative;
+    justify-items: center;
+    width: 400px;
+    height: 25px;
+    left: 35%;
+    top: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+.hamburger-menu-button {
+            width: 120px;
+            height: 55px;
+            background-color: #e74c3c; /* Rojo como en tu imagen */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px; /* Más redondeado como tu imagen */
+            border: 2px solid black; /* Borde negro como tu imagen */
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Espacio entre el icono y la palabra "Menú" */
+            position: fixed; /* O fixed si quieres que flote */
+            top: 20px;
+            left: 15%;
+            z-index: 1001;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hamburger-menu-button:hover {
+            background-color: #c0392b; /* Rojo más oscuro al pasar el ratón */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+        /* Icono de hamburguesa */
+.hamburger-icon {
+            width: 30px;
+            height: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            left: 0;
+        }
+
+        .hamburger-icon span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: white; /* Color de las barras */
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        /* Estilos para el menú lateral (navegación) */
+        .sidebar-menu {
+            height: 100%;
+            width: 0; /* Por defecto, oculto */
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            background-color: #ffffff; /* Color de fondo del menú desplegable */
+            overflow-x: hidden;
+            transition: 0.5s; /* Animación de apertura */
+            padding-top: 60px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+        }
+
+        .sidebar-menu a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 22px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+            left: 45%;
+        }
+
+        .sidebar-menu a:hover {
+            color: #f1f1f1;
+            background-color: #ffffff;
+        }
+
+        /* Botón para cerrar el menú (opcional, si no usas el mismo botón de hamburguesa) */
+        .sidebar-menu .closebtn {
+            position: absolute;
+            top: 0px;
+            left: 56%;
+            font-size: 36px;
+            margin-left: 60px;
+        }
+
+        /* Contenido de la página para que el menú no lo tape */
+        .main-content {
+            margin-left: 0;
+            transition: margin-left .5s;
+            padding: 20px;
+}
+.contenedor_articulos{
+    background-color: #f1f1f1;
+    width: 80%;
+    height: 800px;
+    position: relative;
+    left: 10%;
+    top: 150px;
+    border-radius: 55px;
+}
+.selecion_cueta_pedidos{
+    position: absolute;
+    position-area: right;
+    left: 80%;
+    width: 300px;
+    top: 0px;
+    padding: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.selecion_cueta_pedidos a{
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.selecion_cueta_pedidos a:hover{
+    text-decoration: underline;
+}   
+.selecion_cueta_pedidos li{
+    list-style: none;
+}
+.selecion_cueta_pedidos{
+    position: relative;
+    left: 70%;
+    box-shadow: 0 0 15px #000;
+}
+.carrito{
+    width: 55px;
+    height: 55px;
+}
+.contenedorpromociones{
+
+    background-color: #fff;
+}
